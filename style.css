@@ -1,0 +1,186 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap');
+
+body{
+    background-image: url(imgem/bg-desktop.png.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #674BAF;
+    
+}
+
+.cabecalho{
+    width: 1250px;
+    margin: auto;
+    padding: 50px;
+
+}
+.principal{
+    justify-content: center;
+    padding-left: 50px;
+    display: flex;
+    gap: 30px;
+    background-image: url(imgem/bg-mobile.png.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.principal__conteudo{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.principal__titulo{ 
+    font-family:'Poppins', sans-serif;
+    color: #fff;
+    font-size: 2.3rem;
+    margin-top: 30px;
+}
+
+.principal__paragrafo{
+    font-family:'Poppins', sans-serif;
+    color: #fff;
+    margin-top: 30px;
+    line-height: 25px;
+
+}
+
+.botao{
+    width: 170px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px;
+    margin-top: 30px;
+}
+
+.botao:hover{
+    background-color: #E882E8;
+    color: #fff;
+}
+
+.botao_texto{
+    font-family:'Poppins', sans-serif;
+    text-align: center;
+    color: rgb(112, 23, 196);
+    padding: 5px;   
+}
+
+.botao_texto:hover{  
+    color: #fff;}
+
+.rodape{
+    display: flex;
+    width: 80vw;
+    margin: auto;
+    flex-direction: column;
+    gap: 20px;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.rodape__texto{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.social >a >img{
+    filter: invert(100%);/*inverter a cor da img*/
+    width: 35px;
+    
+}
+
+@media (max-width: 766px){
+    body{
+        max-width: 800px;
+        margin: auto;
+        background-image: url(imgem/bg-mobile.png.png);
+        background-size: contain;
+        
+    }
+    .cabecalho{
+        width: 100%;
+        padding: 30px;
+    }
+
+    .cabecalho__logo{
+        width: 130px;
+        height: auto;
+    }
+
+
+    .principal{
+        width: 100%;
+        height: auto;
+        flex-direction: column; 
+        align-items: center;
+        background-image:none;
+        padding:0;
+        
+    }
+
+    .pricipal__img{
+        margin-top: 30px;
+        width: 300px;
+    }
+
+    .principal__conteudo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+
+    .principal__titulo{
+        font-size:24px ;
+        width: 300px;
+        margin: 1.5rem auto;
+        text-align: center;
+        line-height: 2rem;     
+    }
+    .principal__paragrafo{
+        font-size:16px ;
+        width: 315px;
+        margin: auto;
+        text-align: center;   
+    }
+
+    
+    .botao{
+        width: 250px;
+        padding: 6px;
+    }
+
+    .rodape{
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        margin: auto;
+        height: 200px;
+
+    }
+
+    .rodape__criador{
+        font-size: small;
+    }
+
+
+
+    
+
+}
